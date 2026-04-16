@@ -71,11 +71,14 @@ Refers to `run_train.sh`, `run_server_eval.sh` and `run_local_eval.sh`
 If you find our work useful, please consider citing:
 
 ```bibtex
-@article{zhan2025mathcal,
-  title={$$\backslash$mathcal $\{$E$\}$ \_0 $: Enhancing Generalization and Fine-Grained Control in VLA Models via Continuized Discrete Diffusion},
-  author={Zhan, Zhihao and Zhou, Jiaying and Zhang, Likui and Lv, Qinhan and Liu, Hao and Zhang, Jusheng and Li, Weizheng and Chen, Ziliang and Chen, Tianshui and Wang, Keze and others},
-  journal={arXiv preprint arXiv:2511.21542},
-  year={2025}
+@misc{zhan2026e0enhancinggeneralizationfinegrained,
+      title={E0: Enhancing Generalization and Fine-Grained Control in VLA Models via Tweedie Discrete Diffusion}, 
+      author={Zhihao Zhan and Jiaying Zhou and Likui Zhang and Qinhan Lv and Hao Liu and Jusheng Zhang and Weizheng Li and Ziliang Chen and Tianshui Chen and Ruifeng Zhai and Keze Wang and Liang Lin and Guangrun Wang},
+      year={2026},
+      eprint={2511.21542},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2511.21542}, 
 }
 ```
 
